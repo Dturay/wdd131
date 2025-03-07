@@ -100,7 +100,7 @@ main h3 {
   text-align: center;
   margin-top: 10px;
   border-bottom: 1px solid grey;
-  padding: 10;
+  padding: 2px;
   color: rgb(21, 39, 65);
 }
 
@@ -135,7 +135,6 @@ aside ul li {
 }
 
 aside ul li a {
-  padding-top: auto;
   color: rgb(17, 98, 211);
   transition: color 0.3s;
 }
