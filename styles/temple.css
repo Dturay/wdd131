@@ -77,7 +77,7 @@ main {
     border: 1px solid grey;
 }
 
-main h1 {
+main h2 {
     color: rgb(21, 39, 65);
     text-align: center;
     padding: .3em;
