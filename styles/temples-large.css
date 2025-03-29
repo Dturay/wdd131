@@ -48,10 +48,7 @@
   }
 
   .figure-container {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
-    align-items: center;
+    display:grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); grid-gap: 25px;place-items: center;
   }
 
   main figure {
