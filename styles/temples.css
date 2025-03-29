@@ -85,7 +85,7 @@ main h2 {
 }
 
 .figure-container {
-    display:grid; grid-template-columns: repeat(auto); grid-gap: 25px;place-items: center;
+    display:grid; grid-template-columns: repeat(auto-fill, minmax(1fr)); grid-gap: 25px;place-items: center;
 }
 
 main figure {
