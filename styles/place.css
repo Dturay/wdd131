@@ -6,7 +6,7 @@
 }
 
 * {
-    margin: 0 ;
+    margin: 0;
     padding: 0;
 }
 
@@ -14,42 +14,71 @@ body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 20px;
-    background-color: rgb(88, 99, 95);
+    background-color: white;
     color: var(--text-color);
 }
 
-.hero-image{
+.hero-image {
     width: 100%;
     height: auto;
+    display: block;
 }
 
 header {
-    background-color: blue;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+    background-color: rgb(3, 155, 3);
 }
 
-header h1{
-    background-color: green;
+header h1 {
     padding: 1em;
     text-align: center;
-    color: white;
-    border-bottom: 1em solid white;
+    color: whitesmoke;
+    border-bottom: 1em solid rgb(31, 90, 252);
 }
 
 main {
-        border-radius: 8px;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
-}
-.data, .weather {
-    padding: 20px;
-    background-color: white;
-    border-bottom: .1px solid rgb(194, 189, 189);
+    position: relative; /* Set relative positioning for the main section */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
 }
 
-.info-item, .weather-item {
+.data, .weather {
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.8); /* Slight transparency */
+    border-radius: 5px;
+    text-align: center;
+    z-index: 2; /* Higher z-index to ensure it appears above the image */
+}
+
+/* Default styles (applies to all screens) */
+.data, .weather {
+    position: relative; /* Default positioning for smaller screens */
+}
+
+/* Media Queries for wider screens */
+@media (min-width: 800px) {
+    /* Position the data section in the top right */
+    .data {
+        position: absolute; /* Position absolute to overlay the data section */
+        top: 5%; /* Adjust this value as needed */
+        right: 5%; /* Adjust to give some spacing from the edges */
+        width: 30%; /* Responsive width */
+        max-width: 300px; /* Optional: limit the maximum width */
+    }
+
+    /* Position the weather section in the bottom left */
+    .weather {
+        position: absolute; /* Position absolute to overlay the weather section */
+        bottom: 5%; /* Adjust this value as needed */
+        left: 5%; /* Adjust to give some spacing from the edges */
+        width: 30%; /* Responsive width */
+        max-width: 300px; /* Optional: limit the maximum width */
+    }
+}
+
+.info-item,
+.weather-item {
     padding: 10px;
     border: 1px solid #ddd;
-    border-radius: 5px;
-    background-color: rgba(240, 240, 240, 0.8);
     text-align: center;
 }
 
