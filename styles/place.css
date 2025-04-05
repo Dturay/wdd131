@@ -1,0 +1,77 @@
+:root {
+    --primary-color: #2a6e11; /* Sierra Leone Flag Green */
+    --secondary-color: #d5e241; /* Sierra Leone Flag Yellow */
+    --background-color: #f4f4f9;
+    --text-color: #333;
+}
+
+* {
+    margin: 0 ;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 20px;
+    background-color: rgb(88, 99, 95);
+    color: var(--text-color);
+}
+
+.hero-image{
+    width: 100%;
+    height: auto;
+}
+
+header {
+    background-color: blue;
+}
+
+header h1{
+    background-color: green;
+    padding: 1em;
+    text-align: center;
+    color: white;
+    border-bottom: 1em solid white;
+}
+
+main {
+        border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+.data, .weather {
+    padding: 20px;
+    background-color: white;
+    border-bottom: .1px solid rgb(194, 189, 189);
+}
+
+.info-item, .weather-item {
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    background-color: rgba(240, 240, 240, 0.8);
+    text-align: center;
+}
+
+.weather-icon::after {
+    content: '';
+    background-image: url('../images/weather-icon.svg'); /* Replace with the path to your SVG */
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    vertical-align: middle;
+}
+
+footer {
+    background-color: green;
+    padding: 1em;
+    text-align: center;
+    color: white;
+}
+
+/* Media Queries */
+@media (max-width: 600px) {
+    .hero-image {
+        height: auto;
+    }
+}

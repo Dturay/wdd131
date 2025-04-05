@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Discover the country page for WDD 131 - Dynamic Web Fundamentals, featuring images of the amazing Latter Day Saint temples around the world.">
+    <meta name="author" content="David Turay">
+    <title>Country Page - WDD 131 Dynamic Web Fundamentals - David Turay</title>
+    <link rel="stylesheet" href="styles/place.css">
+    <script src="scripts/place.js" defer></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100..900&display=swap" rel="stylesheet">
+</head>
+    <body>
+        <header>
+            <h1>Sierra Leone</h1>
+            <picture>
+                <source srcset="images/temple-large.webp" media="(min-width: 1000px)">
+                <source srcset="images/temple-medium.webp" media="(min-width: 500px)">
+                <img src="images/temple-small.webp" alt="Sierra Leone landscape" width="500" height="250" class="hero-image">
+            </picture>
+        </header>
+
+        <main>
+            <section class="data">
+                <h2>Country Information</h2>
+                <div class="info-item">Area: 71,740 km²</div>
+                <div class="info-item">Population: 8,057,000</div>
+                <div class="info-item">Capital: Freetown</div>
+                <div class="info-item">Languages: English, Krio, Temne, Mende</div>
+                <div class="info-item">Currency: Sierra Leonean Leone (SLL)</div>
+                <div class="info-item">Timezone: GMT</div>
+                <div class="info-item">Calling Code: +232</div>
+                <div class="info-item">Internet TLD: .sl</div>
+            </section>
+
+            <section class="weather">
+                <h2>Current Weather <span class="weather-icon">⛅</span></h2>
+                <div class="weather-item">Temperature: <span id="temperature">28°C</span></div>
+                <div class="weather-item">Condition: Sunny</div>
+                <div class="weather-item">Wind Speed: <span id="wind-speed">10</span> km/h</div>
+                <div class="weather-item">Wind Chill: <span id="wind-chill">N/A</span></div>
+            </section>
+        </main>
+
+        <footer>
+            <p>&copy; <span id="current-year"></span>. Last modified: <span id="last-modified"></span></p>
+        </footer>
+    </body>
+</html>
