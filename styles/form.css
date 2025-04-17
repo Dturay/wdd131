@@ -1,0 +1,106 @@
+/* General Styles */
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #f9f9f9;
+    color: #1b1b1b;
+    margin: 0;
+    padding: 0;
+}
+
+/* Header */
+header {
+    background-color: #011b38; 
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+}
+
+h1 {
+    margin: 0;
+}
+
+/* Main Content */
+#mainContent {
+    max-width: 600px; 
+    margin: 20px auto; 
+    padding: 20px;
+    background-color: white; 
+    border-radius: 10px; 
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Form Styles */
+form {
+    display: flex; 
+    flex-direction: column; 
+}
+
+/* Label Styles */
+label {
+    margin: 10px 0 5px; 
+    font-weight: bold; 
+}
+
+/* Input, Select, and Textarea Styles */
+input[type="text"],
+input[type="date"],
+select,
+textarea {
+    padding: 10px; 
+    margin-bottom: 15px; 
+    border: 1px solid #949494;
+    border-radius: 5px; 
+    font-size: 16px;
+}
+
+/* Form Button Styles */
+input[type="submit"] {
+    background-color: #06274d; 
+    color: white; 
+    border: none; 
+    padding: 10px 20px; 
+    border-radius: 5px; 
+    cursor: pointer; 
+    font-size: 16px; 
+    transition: background-color 0.3s; 
+}
+
+input[type="submit"]:hover {
+    background-color: #011b38; 
+    font-weight: 600; /* Make the button bold on hover */
+}
+
+/* Rating Styles */
+#rating {
+    display: flex; 
+    justify-content: space-between; /* Evenly space the stars */
+    margin-bottom: 15px; /* Add space below rating block */
+}
+
+.rating-label {
+    display: flex;
+    flex-direction: column; /* Stack label above star input */
+    align-items: center; /* Center align the label and input */
+}
+
+
+/* Confirmation Message Styles */
+#confirmationMessage {
+    text-align: center; 
+    margin-top: 20px; 
+}
+
+/* Footer */
+footer {
+    text-align: center; 
+    padding: 10px 0; 
+    background-color: #011b38; 
+    color: white;
+}
+
+/* Utility Classes */
+.datemodified {
+    font-size: 0.9em; 
+    color: white; 
+    font-weight: 600;
+}
