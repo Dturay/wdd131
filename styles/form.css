@@ -1,6 +1,6 @@
 /* General Styles */
 body {
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Roboto', sans-serif; /* This will work only if 'Roboto' is linked in HTML */
     background-color: #f9f9f9;
     color: #1b1b1b;
     margin: 0;
@@ -67,7 +67,7 @@ input[type="submit"] {
 
 input[type="submit"]:hover {
     background-color: #011b38; 
-    font-weight: 600; /* Make the button bold on hover */
+    transition: background-color 0.3s;
 }
 
 /* Rating Styles */
@@ -83,7 +83,6 @@ input[type="submit"]:hover {
     align-items: center; /* Center align the label and input */
 }
 
-
 /* Confirmation Message Styles */
 #confirmationMessage {
     text-align: center; 
@@ -93,14 +92,16 @@ input[type="submit"]:hover {
 /* Footer */
 footer {
     text-align: center; 
-    padding: 10px 0; 
     background-color: #011b38; 
     color: white;
+}
+
+footer p {
+    margin: 0px 0; 
 }
 
 /* Utility Classes */
 .datemodified {
     font-size: 0.9em; 
     color: white; 
-    font-weight: 600;
 }
